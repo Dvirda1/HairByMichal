@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hair by Michal | מיכל דהרי – מעצבת שיער ברחובות</title>
+<meta name="description" content="מיכל דהרי – מעצבת שיער ברחובות. תספורות, צבע, גוונים ובליאז', החלקות, טיפולי שיקום ותסרוקות כלה וערב. קביעת תור בוואטסאפ.">
+<meta name="theme-color" content="#F7EFE8">
+<meta property="og:title" content="Hair by Michal | מיכל דהרי – מעצבת שיער ברחובות">
+<meta property="og:description" content="תספורות, צבע, החלקות ותסרוקות כלה וערב ברחובות. קביעת תור בוואטסאפ.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<link rel="icon" href="assets/img/logo-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Frank+Ruhl+Libre:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F8F1EA; --cream-2:#F3E7DD; --blush:#F0DCD3; --rose:#E4BCAE; --rose-deep:#C98E7E;
+  --gold:#BE9558; --gold-2:#D9B97F; --gold-3:#F0DDB2; --gold-dark:#97713A;
+  --ink:#4A3428; --ink-soft:#7A5E4E; --espresso:#2D2019;
+  --gold-grad:linear-gradient(115deg,#97713A 0%,#D9B97F 22%,#F6E7C1 34%,#BE9558 50%,#E9CF98 66%,#F8EBCB 74%,#A9803F 100%);
+  --radius:22px; --shadow:0 20px 50px -24px rgba(110,74,50,.35);
+  --he:'Frank Ruhl Libre',serif; --body:'Assistant',sans-serif; --en:'Bodoni Moda',serif; --en2:'Cormorant Garamond',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:hidden}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.container{width:min(1180px,100% - 40px);margin-inline:auto}
+.gold-text{background:var(--gold-grad);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+
+/* ---------- header ---------- */
+.header{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,box-shadow .4s,padding .4s;padding:18px 0}
+.header.scrolled{background:rgba(248,241,234,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 8px 30px -18px rgba(90,60,40,.35);padding:8px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;flex-direction:row-reverse;align-items:center;gap:12px;text-decoration:none;order:3}
+.menu{order:1}
+.nav .btn-gold{order:2;margin-inline-start:auto}
+.burger{order:0}
+.brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(190,149,88,.5);transition:transform .5s}
+.brand:hover img{transform:rotate(-8deg) scale(1.05)}
+.brand span{font-family:var(--en);font-size:19px;letter-spacing:.06em;direction:ltr}
+.menu{display:flex;gap:4px;list-style:none}
+.menu a{display:block;padding:8px 13px;text-decoration:none;font-size:16px;font-weight:500;position:relative;color:var(--ink)}
+.menu a::after{content:"";position:absolute;inset:auto 13px 4px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s}
+.menu a:hover::after,.menu a.active::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 28px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;border:0;transition:transform .3s,box-shadow .3s,background .3s;white-space:nowrap}
+.btn-gold{background:var(--gold-grad);background-size:180% 100%;color:#3b2a1c;box-shadow:0 12px 28px -12px rgba(151,113,58,.7);animation:shine 7s linear infinite}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 34px -12px rgba(151,113,58,.8)}
+.btn-line{border:1px solid var(--gold);color:var(--ink);background:rgba(255,255,255,.35)}
+.btn-line:hover{background:#fff;transform:translateY(-3px)}
+.btn svg{width:19px;height:19px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative}
+.burger span{position:absolute;right:10px;left:10px;height:1.5px;background:var(--ink);transition:.35s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.open span:nth-child(1){top:21px;transform:rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;display:grid;align-items:center;padding:130px 0 80px;overflow:hidden;background:radial-gradient(circle at 80% 20%,#fff8f1 0,transparent 45%),radial-gradient(circle at 10% 90%,var(--blush) 0,transparent 50%),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--en2);font-style:italic;font-size:20px;color:var(--gold-dark);letter-spacing:.04em}
+.eyebrow::before,.eyebrow::after{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--he);font-weight:300;font-size:clamp(44px,6.4vw,84px);line-height:1.1;margin:18px 0 22px}
+.hero h1 b{font-weight:500;display:block}
+.hero p.lead{font-size:19px;color:var(--ink-soft);max-width:520px;margin-bottom:34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap;color:var(--ink-soft);font-size:15px}
+.hero-meta div{display:flex;align-items:center;gap:8px}
+.hero-meta svg{width:18px;height:18px;color:var(--gold)}
+.logo-stage{position:relative;aspect-ratio:1;max-width:540px;margin-inline:auto;width:100%}
+.logo-stage .halo{position:absolute;inset:-6%;border-radius:50%;background:conic-gradient(from 0deg,transparent,rgba(217,185,127,.55),transparent 30%,rgba(228,188,174,.5),transparent 60%,rgba(217,185,127,.45),transparent);filter:blur(28px);animation:spin 18s linear infinite}
+.logo-stage .ring{position:absolute;inset:-3%;border-radius:50%;border:1px solid rgba(190,149,88,.45);animation:spin 40s linear infinite}
+.logo-stage .ring::before{content:"";position:absolute;top:-5px;left:50%;width:9px;height:9px;border-radius:50%;background:var(--gold-2);box-shadow:0 0 14px var(--gold-2)}
+.logo-stage .ring.r2{inset:-9%;border-style:dashed;border-color:rgba(190,149,88,.25);animation-duration:70s;animation-direction:reverse}
+.logo-stage img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;box-shadow:0 40px 80px -30px rgba(120,80,50,.45);animation:float 7s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(1.2deg)}}
+.strands{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.75}
+.strands path{fill:none;stroke-linecap:round}
+.strands .s1{animation:drift 14s ease-in-out infinite alternate}
+.strands .s2{animation:drift 18s ease-in-out infinite alternate-reverse}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-40px,25px)}}
+.sparkles span{position:absolute;width:6px;height:6px;border-radius:50%;background:radial-gradient(circle,#fff6dc,#D9B97F 60%,transparent 70%);opacity:0;animation:twinkle 6s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:0;transform:translateY(0) scale(.6)}40%{opacity:1}100%{transform:translateY(-120px) scale(1)}}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;width:26px;height:42px;border:1px solid var(--gold);border-radius:20px}
+.scroll-cue::after{content:"";position:absolute;top:8px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold);animation:cue 2s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--espresso);color:var(--gold-3);overflow:hidden;padding:18px 0;border-block:1px solid rgba(217,185,127,.3)}
+.marquee-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
+.marquee span{font-family:var(--he);font-size:22px;padding-inline:26px;display:flex;align-items:center;gap:52px;white-space:nowrap}
+.marquee span::after{content:"✦";color:var(--gold);font-size:14px}
+@keyframes marquee{to{transform:translateX(50%)}}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.section{padding:120px 0}
+.head{text-align:center;max-width:660px;margin:0 auto 64px}
+.head .eyebrow{justify-content:center}
+.head h2{font-family:var(--he);font-weight:400;font-size:clamp(36px,4.6vw,56px);line-height:1.15;margin:12px 0 16px}
+.head p{color:var(--ink-soft);font-size:18px}
+.divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px auto 0}
+.divider i{width:70px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.divider i:last-child{transform:scaleX(-1)}
+.divider svg{width:26px;height:26px}
+
+/* services */
+.services{background:linear-gradient(180deg,var(--cream) 0,#fff9f4 100%)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{position:relative;background:rgba(255,255,255,.7);border:1px solid rgba(190,149,88,.25);border-radius:var(--radius);padding:38px 32px 34px;overflow:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .5s}
+.card::before{content:"";position:absolute;inset:auto -40% -60% auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(228,188,174,.5),transparent 70%);transition:transform .6s}
+.card:hover{transform:translateY(-10px);box-shadow:var(--shadow);border-color:rgba(190,149,88,.6)}
+.card:hover::before{transform:scale(1.6)}
+.icon{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff,var(--blush));box-shadow:inset 0 0 0 1px rgba(190,149,88,.4);margin-bottom:22px;transition:transform .6s}
+.card:hover .icon{transform:rotate(-12deg) scale(1.08)}
+.icon svg{width:32px;height:32px;stroke:var(--gold-dark);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-family:var(--he);font-weight:500;font-size:25px;margin-bottom:8px}
+.card p{color:var(--ink-soft);font-size:16px}
+.card .tag{display:inline-block;margin-top:16px;font-size:14px;color:var(--gold-dark);font-weight:600;letter-spacing:.02em}
+
+/* styles / hairdos */
+.styles{background:var(--espresso);color:var(--cream);overflow:hidden}
+.styles .head h2{color:#fff}
+.styles .head p{color:#d9c7ba}
+.styles .eyebrow{color:var(--gold-2)}
+.style-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.style{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:linear-gradient(160deg,#4a362b,#2a1e18);border:1px solid rgba(217,185,127,.25);display:flex;align-items:flex-end;padding:28px;isolation:isolate;transition:transform .5s,border-color .5s}
+.style .art{position:absolute;inset:0;z-index:-1;opacity:.6;transition:transform 1.2s cubic-bezier(.2,.7,.2,1),opacity .6s}
+.style:hover{transform:translateY(-8px);border-color:rgba(217,185,127,.7)}
+.style:hover .art{transform:scale(1.12) rotate(-3deg);opacity:.9}
+.style::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(26,18,14,.92) 0,rgba(26,18,14,.2) 55%,transparent)}
+.style .num{position:absolute;top:24px;right:26px;font-family:var(--en);font-style:italic;font-size:15px;color:var(--gold-2);letter-spacing:.08em}
+.style h3{font-family:var(--he);font-weight:400;font-size:28px;color:#fff}
+.style p{font-size:15px;color:#d9c7ba;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s,opacity .6s,margin .6s}
+.style:hover p,.style:focus-within p{max-height:120px;opacity:1;margin-top:6px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.portrait{position:relative;max-width:440px;margin-inline:auto;width:100%}
+.portrait .frame{position:relative;aspect-ratio:4/5;border-radius:220px 220px 26px 26px;overflow:hidden;background:linear-gradient(160deg,var(--blush),var(--cream-2));box-shadow:var(--shadow);display:grid;place-items:center}
+.portrait .frame img{width:100%;height:100%;object-fit:cover}
+.portrait .frame .ph{text-align:center;color:var(--ink-soft);font-size:15px;padding:30px}
+.portrait .frame .ph img{width:62%;height:auto;margin:0 auto 14px;border-radius:50%;opacity:.95}
+.portrait .outline{position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--gold);border-radius:220px 220px 26px 26px;z-index:-1}
+.portrait .badge{position:absolute;bottom:34px;right:-30px;background:#fff;border-radius:18px;padding:14px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;animation:float 6s ease-in-out infinite}
+.portrait .badge b{font-family:var(--he);font-size:30px;font-weight:500;line-height:1}
+.portrait .badge small{display:block;font-size:13px;color:var(--ink-soft);line-height:1.3}
+.about h2{font-family:var(--he);font-weight:400;font-size:clamp(36px,4.4vw,54px);line-height:1.15;margin:12px 0 22px}
+.about p{color:var(--ink-soft);margin-bottom:16px;font-size:18px}
+.signature{font-family:var(--en2);font-style:italic;font-size:38px;color:var(--gold-dark);margin-top:6px;direction:ltr;text-align:right}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.value{border-top:1px solid rgba(190,149,88,.45);padding-top:14px}
+.value b{display:block;font-family:var(--he);font-weight:500;font-size:19px}
+.value span{font-size:14.5px;color:var(--ink-soft)}
+
+/* process */
+.process{background:linear-gradient(180deg,#fff9f4,var(--blush))}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:44px;right:12%;left:12%;height:1px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px,transparent 6px 12px)}
+.step{text-align:center;position:relative}
+.step .dot{width:88px;height:88px;margin:0 auto 20px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 0 0 1px rgba(190,149,88,.4),0 14px 30px -16px rgba(110,74,50,.5);position:relative;transition:transform .5s}
+.step:hover .dot{transform:translateY(-8px)}
+.step .dot::after{counter-increment:s;content:"0" counter(s);position:absolute;top:-6px;left:-6px;width:30px;height:30px;border-radius:50%;background:var(--gold-grad);font-family:var(--en);font-size:12px;display:grid;place-items:center;color:#3b2a1c}
+.step .dot svg{width:34px;height:34px;stroke:var(--gold-dark);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.step h3{font-family:var(--he);font-weight:500;font-size:22px;margin-bottom:6px}
+.step p{font-size:15.5px;color:var(--ink-soft);max-width:240px;margin-inline:auto}
+
+/* gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px}
+.g-item{position:relative;border-radius:18px;overflow:hidden;background:linear-gradient(150deg,var(--blush),var(--cream-2));cursor:pointer;border:0;padding:0;transition:transform .5s}
+.g-item:nth-child(1){grid-row:span 2}
+.g-item:nth-child(4){grid-column:span 2}
+.g-item:nth-child(6){grid-row:span 2}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.g-item:hover img{transform:scale(1.08)}
+.g-item .ph{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:10px;color:var(--ink-soft);font-size:14px}
+.g-item .ph svg{width:46px;height:46px;stroke:var(--gold);fill:none;stroke-width:1.1;transition:transform .8s}
+.g-item:hover .ph svg{transform:rotate(-15deg) scale(1.1)}
+.g-item .cap{position:absolute;inset:auto 0 0;padding:16px 18px;background:linear-gradient(0deg,rgba(45,32,25,.75),transparent);color:#fff;font-family:var(--he);font-size:18px;text-align:right;transform:translateY(100%);transition:transform .5s}
+.g-item:hover .cap{transform:none}
+.insta-cta{text-align:center;margin-top:44px}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(30,20,15,.92);display:none;place-items:center;padding:30px}
+.lightbox.open{display:grid;animation:fade .4s}
+.lightbox img{max-height:86vh;border-radius:14px}
+.lightbox button{position:absolute;top:20px;left:24px;background:none;border:0;color:#fff;font-size:40px;line-height:1}
+@keyframes fade{from{opacity:0}}
+
+/* faq */
+.faq{background:radial-gradient(circle at 15% 20%,rgba(255,255,255,.55),transparent 40%),radial-gradient(circle at 85% 85%,rgba(217,185,127,.25),transparent 45%),linear-gradient(160deg,var(--blush) 0%,#EBCFC4 55%,var(--blush) 100%);overflow:hidden;border-block:1px solid rgba(190,149,88,.35)}
+.faq .container{position:relative;z-index:1}
+.faq-deco{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.7}
+.faq-deco path{fill:none;stroke-linecap:round}
+.faq-wrap{max-width:880px;margin-inline:auto;background:rgba(255,252,249,.82);border:1px solid rgba(190,149,88,.35);border-radius:28px;padding:14px 44px;box-shadow:0 30px 70px -35px rgba(110,74,50,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.faq-wrap .qa:last-child{border-bottom:0}
+.qa{border-bottom:1px solid rgba(190,149,88,.35)}
+.qa button{width:100%;background:none;border:0;text-align:right;padding:26px 4px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:var(--he);font-size:21px;color:var(--ink)}
+.qa .pm{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);position:relative;transition:transform .5s,background .4s}
+.qa .pm::before,.qa .pm::after{content:"";position:absolute;top:50%;left:50%;width:12px;height:1px;background:var(--gold-dark);transform:translate(-50%,-50%)}
+.qa .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .4s}
+.qa.open .pm{background:var(--blush);transform:rotate(180deg)}
+.qa.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.7,.2,1)}
+.qa.open .ans{grid-template-rows:1fr}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{padding:0 4px 26px 60px;color:var(--ink-soft);font-size:17px}
+
+/* contact */
+.contact{background:linear-gradient(180deg,var(--cream),var(--blush));overflow:hidden}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:start}
+.c-list{display:grid;gap:16px}
+.c-item{display:flex;align-items:center;gap:18px;padding:20px 22px;background:rgba(255,255,255,.75);border:1px solid rgba(190,149,88,.25);border-radius:18px;text-decoration:none;transition:transform .4s,box-shadow .4s,border-color .4s}
+a.c-item:hover{transform:translateX(-8px);box-shadow:var(--shadow);border-color:var(--gold)}
+.c-item .icon{margin:0;width:54px;height:54px;flex:none}
+.c-item .icon svg{width:24px;height:24px}
+.c-item b{display:block;font-family:var(--he);font-weight:500;font-size:19px}
+.c-item span{color:var(--ink-soft);font-size:15.5px}
+.form{background:#fff;border-radius:26px;padding:40px;box-shadow:var(--shadow);border:1px solid rgba(190,149,88,.25);position:relative}
+.form h3{font-family:var(--he);font-weight:400;font-size:30px;margin-bottom:6px}
+.form>p{color:var(--ink-soft);margin-bottom:24px;font-size:16px}
+.field{position:relative;margin-bottom:18px}
+.field label{display:block;font-size:14.5px;font-weight:600;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--cream);border:1px solid transparent;border-radius:12px;padding:13px 16px;transition:border-color .3s,background .3s,box-shadow .3s}
+.field textarea{min-height:100px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(217,185,127,.2)}
+.field .err{display:none;color:#a8443a;font-size:13.5px;margin-top:4px}
+.field.invalid .err{display:block}
+.field.invalid input,.field.invalid select{border-color:#c46a5e}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .btn{width:100%;margin-top:6px}
+
+/* footer */
+footer{background:var(--espresso);color:#e9dfd9;padding:80px 0 34px;text-align:center;position:relative;overflow:hidden}
+footer .f-logo{width:120px;height:120px;border-radius:50%;margin:0 auto 20px;object-fit:cover;box-shadow:0 0 0 1px rgba(217,185,127,.45)}
+footer .f-name{font-family:var(--en);font-size:26px;letter-spacing:.12em;direction:ltr}
+footer .f-tag{color:#cdb9ab;font-size:15px;margin:4px 0 28px}
+footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 24px;margin:30px 0}
+footer nav a{text-decoration:none;color:#e9dfd9;font-size:15px;opacity:.85;transition:opacity .3s,color .3s}
+footer nav a:hover{opacity:1;color:var(--gold-2)}
+.socials{display:flex;justify-content:center;gap:12px;margin-bottom:34px}
+.socials a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(217,185,127,.4);transition:background .3s,transform .3s}
+.socials a:hover{background:rgba(217,185,127,.15);transform:translateY(-4px)}
+.socials svg{width:19px;height:19px;stroke:var(--gold-2);fill:none;stroke-width:1.5}
+.copy{border-top:1px solid rgba(233,223,217,.12);padding-top:24px;font-size:14px;color:#e9dfd9b3}
+.credit{margin-top:14px;padding-top:12px;border-top:1px solid #e9dfd926;display:inline-block;font-size:.8rem;letter-spacing:.02em;color:#e9dfd9b3}
+.credit a{color:#e8c9bf;text-decoration:none;font-weight:400;border-bottom:1px solid #e8c9bf66;padding-bottom:1px;transition:border-color .2s,color .2s}
+.credit a:hover,.credit a:focus-visible{color:#fff;border-color:#e8c9bf}
+
+/* floating whatsapp */
+.wa-float{position:fixed;bottom:22px;left:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(37,211,102,.6);transition:transform .3s}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:pulse 2.4s infinite}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.icon svg.wa-ico,.socials svg.wa-ico{fill:#25D366;stroke:none}
+@keyframes pulse{from{transform:scale(1);opacity:.8}to{transform:scale(1.7);opacity:0}}
+.to-top{position:fixed;bottom:94px;left:30px;z-index:60;width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:rgba(255,255,255,.85);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .4s,transform .4s;transform:translateY(10px)}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}
+.to-top svg{width:18px;height:18px;stroke:var(--gold-dark);fill:none;stroke-width:1.6}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.reveal.r-right{transform:translateX(-50px)}
+.reveal.r-left{transform:translateX(50px)}
+.reveal.r-zoom{transform:scale(.92)}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .header,.header.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none}
+  .header.scrolled{background:rgba(248,241,234,.97)}
+  .menu{position:fixed;top:0;bottom:0;right:0;height:100vh;width:min(320px,85vw);flex-direction:column;background:var(--cream);padding:100px 30px 30px;gap:6px;transform:translateX(100%);visibility:hidden;transition:transform .5s cubic-bezier(.2,.7,.2,1),visibility 0s .5s;box-shadow:-20px 0 60px -30px rgba(0,0,0,.4);z-index:55}
+  .menu.open{transform:none;visibility:visible;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .menu a{font-size:20px;font-family:var(--he);padding:12px 6px;border-bottom:1px solid rgba(190,149,88,.2)}
+  .burger{display:block;z-index:60}
+  .brand{margin-inline-start:auto}
+  .nav .btn-gold{display:none}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero{text-align:center}
+  .hero p.lead{margin-inline:auto}
+  .hero-ctas,.hero-meta{justify-content:center}
+  .logo-stage{max-width:380px;order:-1}
+  .cards,.style-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:44px}
+  .steps::before{display:none}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}
+  .about-grid{gap:60px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .section{padding:84px 0}
+  .head{margin-bottom:44px}
+  .cards,.style-grid,.values{grid-template-columns:1fr}
+  .style{aspect-ratio:5/4}
+  .style p{max-height:none;opacity:1;margin-top:6px}
+  .steps{grid-template-columns:1fr}
+  .gallery-grid{grid-auto-rows:160px}
+  .g-item:nth-child(4){grid-column:auto}
+  .row2{grid-template-columns:1fr}
+  .form{padding:28px 22px}
+  .portrait .badge{right:-6px}
+  .qa button{font-size:18px}
+  .faq-wrap{padding:6px 20px;border-radius:22px}
+  .qa .ans p{padding-left:10px}
+  .brand span{font-size:16px}
+  .brand img{width:46px;height:46px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#home" class="brand" aria-label="Hair by Michal – לראש העמוד">
+      <img src="assets/img/logo-512.png" alt="לוגו Hair by Michal">
+      <span>Hair by Michal</span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#home">בית</a></li>
+      <li><a href="#services">טיפולים</a></li>
+      <li><a href="#styles">עיצובים</a></li>
+      <li><a href="#about">אודות</a></li>
+      <li><a href="#gallery">עבודות</a></li>
+      <li><a href="#faq">שאלות נפוצות</a></li>
+      <li><a href="#contact">צור קשר</a></li>
+    </ul>
+    <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">לקביעת תור</a>
+    <button class="burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <svg class="strands" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#D9B97F" stop-opacity="0"/><stop offset=".5" stop-color="#C9A266"/><stop offset="1" stop-color="#E4BCAE" stop-opacity="0"/></linearGradient></defs>
+    <g class="s1" stroke="url(#hg)">
+      <path d="M-50 700 C240 560 420 820 720 640 S1180 420 1500 560" stroke-width="1.4"/>
+      <path d="M-50 716 C250 576 430 836 726 656 S1190 436 1500 578" stroke-width=".8"/>
+      <path d="M-50 732 C260 594 440 850 732 672 S1196 452 1500 596" stroke-width="1.1"/>
+      <path d="M-50 748 C270 610 450 866 738 690 S1204 470 1500 614" stroke-width=".6"/>
+    </g>
+    <g class="s2" stroke="url(#hg)" opacity=".7">
+      <path d="M-50 180 C300 80 520 300 820 200 S1250 40 1500 140" stroke-width="1"/>
+      <path d="M-50 196 C310 96 530 316 826 216 S1256 56 1500 158" stroke-width=".6"/>
+      <path d="M-50 212 C320 112 540 332 832 232 S1262 72 1500 176" stroke-width=".9"/>
+    </g>
+  </svg>
+  <div class="sparkles" aria-hidden="true" id="sparkles"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow reveal">Hair by Michal</span>
+      <h1 class="reveal" style="transition-delay:.1s">השיער שלך,<b class="gold-text">היצירה שלי</b></h1>
+      <p class="lead reveal" style="transition-delay:.2s">מיכל דהרי, מעצבת שיער ברחובות. תספורות, צבע, החלקות ותסרוקות לאירועים, בהתאמה אישית ובאהבה גדולה לשיער.</p>
+      <div class="hero-ctas reveal" style="transition-delay:.3s">
+        <a class="btn btn-gold wa-link" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          קביעת תור בוואטסאפ</a>
+        <a class="btn btn-line" href="#services">לכל הטיפולים</a>
+      </div>
+      <div class="hero-meta reveal" style="transition-delay:.4s">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>רחובות</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7Z"/></svg>ליווי אישי לכל לקוחה</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20c4-1 6-4 6-8s2-7 6-8M8 21c3-1 5-4 5-8s2-6 6-7"/></svg>חומרים מקצועיים בלבד</div>
+      </div>
+    </div>
+    <div class="logo-stage reveal r-zoom" style="transition-delay:.2s">
+      <div class="halo"></div><div class="ring r2"></div><div class="ring"></div>
+      <img src="assets/img/logo.webp" alt="Hair by Michal – מיכל דהרי מעצבת שיער" width="1254" height="1254">
+    </div>
+  </div>
+  <a class="scroll-cue" href="#services" aria-label="גלילה למטה"></a>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>תספורות נשים</span><span>צבע ושורשים</span><span>גוונים ובליאז׳</span><span>החלקות</span><span>טיפולי שיקום</span><span>תסרוקות כלה</span><span>תסרוקות ערב</span><span>פן ועיצוב</span>
+    <span>תספורות נשים</span><span>צבע ושורשים</span><span>גוונים ובליאז׳</span><span>החלקות</span><span>טיפולי שיקום</span><span>תסרוקות כלה</span><span>תסרוקות ערב</span><span>פן ועיצוב</span>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>הטיפולים שלי</h2>
+      <p>כל טיפול מתחיל בשיחה קצרה: מה את אוהבת, איך השיער שלך מתנהג ומה מתאים לך ביום-יום.</p>
+      <div class="divider"><i></i><svg viewBox="0 0 26 26" fill="none" stroke="#BE9558" stroke-width="1"><path d="M13 4c3 3 3 8 0 12-3-4-3-9 0-12Z" fill="#F0DCD3"/><path d="M13 16c-2-3-6-4-9-3 2 3 6 4 9 3Zm0 0c2-3 6-4 9-3-2 3-6 4-9 3Z" fill="#F0DCD3"/></svg><i></i></div>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 32 32"><circle cx="8" cy="24" r="4"/><circle cx="24" cy="24" r="4"/><path d="M11 21 25 4M21 21 7 4"/></svg></div>
+        <h3>תספורת נשים</h3>
+        <p>תספורת שמותאמת למבנה הפנים, לסוג השיער ולאורח החיים שלך. כולל חפיפה ופן.</p>
+        <span class="tag">שיער קצר, בינוני וארוך</span>
+      </article>
+      <article class="card reveal" style="transition-delay:.1s">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M16 3s-8 9-8 15a8 8 0 0 0 16 0c0-6-8-15-8-15Z"/><path d="M12 19a4 4 0 0 0 4 4"/></svg></div>
+        <h3>צבע ושורשים</h3>
+        <p>צביעה מלאה או צבע שורשים בגוון מדויק, עם חומרים איכותיים ששומרים על ברק ועל בריאות השיער.</p>
+        <span class="tag">כיסוי שיער לבן · שינוי גוון</span>
+      </article>
+      <article class="card reveal" style="transition-delay:.2s">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M8 4c-2 8 4 12 2 24M14 4c-2 8 4 12 2 24M20 4c-2 8 4 12 2 24M26 4c-2 8 4 12 2 24"/></svg></div>
+        <h3>גוונים ובליאז׳</h3>
+        <p>הבהרות טבעיות ורכות, בליאז׳ בעבודת יד ותוצאה שנראית כמו נשיקת שמש. גם שטיפת גוון וטונר.</p>
+        <span class="tag">בליאז׳ · היילייטס · טונר</span>
+      </article>
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M9 4v24M14 4v24M19 4v24M24 4v24"/><path d="M5 10h22" stroke-dasharray="2 2"/></svg></div>
+        <h3>החלקות</h3>
+        <p>החלקה אורגנית או קרטין לשיער חלק, רך ומבריק לאורך זמן. בלי פריז ועם הרבה פחות זמן מול המראה.</p>
+        <span class="tag">אורגנית · קרטין</span>
+      </article>
+      <article class="card reveal" style="transition-delay:.1s">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M16 28c-6-4-10-9-10-14a6 6 0 0 1 10-4 6 6 0 0 1 10 4c0 5-4 10-10 14Z"/><path d="M12 15h8M16 11v8"/></svg></div>
+        <h3>טיפולי שיקום</h3>
+        <p>טיפולים מזינים לשיער יבש, פגום או צבוע. מחזירים לשיער לחות, גמישות וברק כבר מהפעם הראשונה.</p>
+        <span class="tag">מסכות · בוטוקס לשיער</span>
+      </article>
+      <article class="card reveal" style="transition-delay:.2s">
+        <div class="icon"><svg viewBox="0 0 32 32"><path d="M6 10c4-4 8 4 12 0s6-4 8-2M6 16c4-4 8 4 12 0s6-4 8-2M6 22c4-4 8 4 12 0s6-4 8-2"/></svg></div>
+        <h3>פן ועיצוב</h3>
+        <p>פן חלק, נפח או גלים רכים. מושלם לפני אירוע, צילומים או סתם כי מגיע לך להרגיש מדהים.</p>
+        <span class="tag">פן · גלים · בייביליס</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STYLES ================= -->
+<section class="section styles" id="styles">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">Hair Styling</span>
+      <h2>עיצובי שיער ותסרוקות</h2>
+      <p>לרגעים הכי חשובים בחיים: תסרוקת שמחזיקה כל הערב ונראית מושלם בתמונות.</p>
+    </div>
+    <div class="style-grid">
+      <div class="style reveal" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#D9B97F" stroke-width="1"><path d="M150 40c-60 20-80 90-60 160s10 120-30 150"/><path d="M160 44c-50 24-66 90-46 156s14 118-20 150"/><path d="M150 40c60 20 80 90 60 160s-10 120 30 150"/><path d="M140 44c50 24 66 90 46 156s-14 118 20 150"/><circle cx="150" cy="110" r="34"/></g></svg><span class="num">01</span><div><h3>תסרוקות כלה</h3><p>פגישת ניסיון לפני החתונה, ליווי ביום עצמו ותסרוקת שמחזיקה מהחופה ועד הריקוד האחרון.</p></div></div>
+      <div class="style reveal" style="transition-delay:.1s" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#E4BCAE" stroke-width="1"><path d="M40 60c60 0 60 50 120 50s60-50 120-50"/><path d="M40 110c60 0 60 50 120 50s60-50 120-50"/><path d="M40 160c60 0 60 50 120 50s60-50 120-50"/><path d="M40 210c60 0 60 50 120 50s60-50 120-50"/><path d="M40 260c60 0 60 50 120 50s60-50 120-50"/></g></svg><span class="num">02</span><div><h3>גלים הוליוודיים</h3><p>גלים רכים ומבריקים בסגנון קלאסי, אלגנטיים ונשיים, מתאימים לכל אורך שיער.</p></div></div>
+      <div class="style reveal" style="transition-delay:.2s" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#D9B97F" stroke-width="1"><circle cx="150" cy="150" r="40"/><circle cx="150" cy="150" r="60"/><path d="M110 150c0-40 80-40 80 0s-60 40-60 0 40-20 40 0"/><path d="M90 220c20 40 100 40 120 0"/><path d="M80 260c30 50 110 50 140 0"/></g></svg><span class="num">03</span><div><h3>אסופות ושיניונים</h3><p>אסוף נמוך ורומנטי, שיניון מוקפד או אסוף מרושל-מכוון. מעודן, נקי ויוקרתי.</p></div></div>
+      <div class="style reveal" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#E4BCAE" stroke-width="1"><path d="M130 30c40 30-40 50 0 80s-40 50 0 80-40 50 0 80-40 50 0 80"/><path d="M170 30c-40 30 40 50 0 80s40 50 0 80 40 50 0 80 40 50 0 80"/><path d="M150 20v340" stroke-dasharray="3 6"/></g></svg><span class="num">04</span><div><h3>צמות ועיצובים קלועים</h3><p>צמות צרפתיות, צמות דג וקליעות מעוצבות, לבד או בשילוב עם שיער פזור.</p></div></div>
+      <div class="style reveal" style="transition-delay:.1s" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#D9B97F" stroke-width="1"><path d="M60 330C80 200 120 120 150 60c30 60 70 140 90 270"/><path d="M90 330c14-110 40-180 60-230 20 50 46 120 60 230"/><path d="M120 330c6-80 18-140 30-180 12 40 24 100 30 180"/><circle cx="150" cy="50" r="6"/></g></svg><span class="num">05</span><div><h3>ערב ואירועים</h3><p>חינה, אירוסין, בר/בת מצווה או מסיבה. תסרוקת שמתאימה לשמלה, לאיפור ולאווירה.</p></div></div>
+      <div class="style reveal" style="transition-delay:.2s" tabindex="0"><svg class="art" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#E4BCAE" stroke-width="1"><path d="M70 80c30-30 130-30 160 0"/><path d="M80 80c-10 80 10 160-10 240M220 80c10 80-10 160 10 240"/><path d="M110 90c-6 70 6 150-6 230M190 90c6 70-6 150 6 230M150 86v240"/></g></svg><span class="num">06</span><div><h3>שיער חלק ומבריק</h3><p>פן חלק כמו משי עם ברק של מראה. קלאסי, נקי ותמיד מושלם.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="portrait reveal r-right">
+      <div class="outline"></div>
+      <div class="frame">
+        <!-- כאן תיכנס התמונה של מיכל: <img src="assets/img/michal.jpg" alt="מיכל דהרי"> -->
+        <div class="ph"><img src="assets/img/logo-512.png" alt="">התמונה של מיכל תופיע כאן</div>
+      </div>
+      <div class="badge"><div class="icon" style="width:46px;height:46px;margin:0"><svg viewBox="0 0 32 32" style="width:22px;height:22px"><path d="M16 28c-6-4-10-9-10-14a6 6 0 0 1 10-4 6 6 0 0 1 10 4c0 5-4 10-10 14Z"/></svg></div><div><b>רחובות</b><small>סטודיו לעיצוב שיער</small></div></div>
+    </div>
+    <div class="reveal r-left">
+      <span class="eyebrow">Nice to meet you</span>
+      <h2>נעים להכיר, <span class="gold-text">אני מיכל</span></h2>
+      <p>אני מיכל דהרי, בת 25 מרחובות, ושיער הוא האהבה הגדולה שלי. כבר כמה שנים שאני לומדת, מתאמנת ומתמחה בעיצוב שיער, וכל יום מחדש אני מתרגשת לראות לקוחה קמה מהכיסא ומחייכת למראה.</p>
+      <p>אני מאמינה שכל אישה ראויה לשיער שגורם לה להרגיש הכי יפה ובטוחה בעצמה. לכן כל טיפול אצלי מתחיל בהקשבה: מה את אוהבת, מה מתאים לך ואיך תוכלי לתחזק את זה בבית בקלות.</p>
+      <p>אני ממשיכה להשתלם ולהתעדכן בטכניקות ובטרנדים החדשים, ועובדת רק עם חומרים מקצועיים ואיכותיים.</p>
+      <div class="signature">Michal Dahari</div>
+      <div class="values">
+        <div class="value"><b>הקשבה</b><span>מתאימה את הטיפול בדיוק אלייך</span></div>
+        <div class="value"><b>מקצועיות</b><span>לימוד והשתלמות כל הזמן</span></div>
+        <div class="value"><b>איכות</b><span>רק חומרים שאני סומכת עליהם</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section process">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">The Experience</span>
+      <h2>איך זה עובד?</h2>
+      <p>מהרגע ששלחת הודעה ועד שאת יוצאת מהסטודיו עם חיוך.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="dot"><svg viewBox="0 0 32 32"><path d="M6 8h20v13H14l-6 5v-5H6Z"/></svg></div><h3>שולחת הודעה</h3><p>כותבת לי בוואטסאפ מה תרצי, ונקבע יחד מועד שנוח לך.</p></div>
+      <div class="step reveal" style="transition-delay:.12s"><div class="dot"><svg viewBox="0 0 32 32"><circle cx="16" cy="12" r="5"/><path d="M7 27c1-6 5-9 9-9s8 3 9 9"/></svg></div><h3>ייעוץ אישי</h3><p>מתחילות בשיחה: מה את אוהבת, מה מתאים לשיער שלך ולאורח החיים.</p></div>
+      <div class="step reveal" style="transition-delay:.24s"><div class="dot"><svg viewBox="0 0 32 32"><circle cx="9" cy="24" r="3.5"/><circle cx="23" cy="24" r="3.5"/><path d="M11.5 21.5 24 5M20.5 21.5 8 5"/></svg></div><h3>הטיפול</h3><p>עבודה מדויקת ורגועה, עם חומרים מקצועיים ותשומת לב לכל פרט.</p></div>
+      <div class="step reveal" style="transition-delay:.36s"><div class="dot"><svg viewBox="0 0 32 32"><path d="M16 4l3 7 7 .8-5.3 4.8 1.5 7.1L16 20l-6.2 3.7 1.5-7.1L6 11.8l7-.8Z"/></svg></div><h3>יוצאת מושלמת</h3><p>מקבלת טיפים לתחזוקה בבית, כדי שהשיער יישאר יפה לאורך זמן.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h2>העבודות שלי</h2>
+      <p>קצת מהעבודות האחרונות מהסטודיו. מוזמנת לעקוב באינסטגרם לעוד השראה.</p>
+    </div>
+    <!-- להוספת תמונה: מחליפים את <div class="ph">...</div> ב- <img src="assets/img/work-1.jpg" alt="תיאור"> -->
+    <div class="gallery-grid" id="gallery-grid">
+      <button class="g-item reveal r-zoom"><div class="ph"><svg viewBox="0 0 48 48"><path d="M14 6c-4 12 6 18 2 36M24 6c-4 12 6 18 2 36M34 6c-4 12 6 18 2 36"/></svg>בליאז׳</div><span class="cap">בליאז׳ חום-דבש</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.08s"><div class="ph"><svg viewBox="0 0 48 48"><path d="M8 16c8-8 16 8 24 0s8-4 8-4M8 26c8-8 16 8 24 0s8-4 8-4M8 36c8-8 16 8 24 0s8-4 8-4"/></svg>גלים</div><span class="cap">גלים הוליוודיים</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.16s"><div class="ph"><svg viewBox="0 0 48 48"><circle cx="24" cy="20" r="9"/><path d="M15 20c0-12 18-12 18 0M18 34c4 6 8 6 12 0"/></svg>אסוף</div><span class="cap">אסוף כלה רומנטי</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.24s"><div class="ph"><svg viewBox="0 0 48 48"><path d="M12 6v36M20 6v36M28 6v36M36 6v36"/></svg>החלקה</div><span class="cap">החלקה אורגנית</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.08s"><div class="ph"><svg viewBox="0 0 48 48"><circle cx="13" cy="36" r="5"/><circle cx="35" cy="36" r="5"/><path d="M17 33 37 6M31 33 11 6"/></svg>תספורת</div><span class="cap">תספורת שכבות</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.16s"><div class="ph"><svg viewBox="0 0 48 48"><path d="M24 4s-11 13-11 22a11 11 0 0 0 22 0c0-9-11-22-11-22Z"/></svg>צבע</div><span class="cap">צבע נחושת</span></button>
+      <button class="g-item reveal r-zoom" style="transition-delay:.24s"><div class="ph"><svg viewBox="0 0 48 48"><path d="M20 4c6 6-6 9 0 15s-6 9 0 15-6 9 0 10M28 4c-6 6 6 9 0 15s6 9 0 15 6 9 0 10"/></svg>צמה</div><span class="cap">צמה צרפתית</span></button>
+    </div>
+    <div class="insta-cta reveal"><a class="btn btn-line insta-link" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>לעוד עבודות באינסטגרם</a></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section faq" id="faq">
+  <svg class="faq-deco" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g stroke="#C9A266"><path d="M-40 120 C260 20 420 260 700 160 S1180 -10 1480 90" stroke-width="1.2"/><path d="M-40 136 C270 36 430 276 706 176 S1186 6 1480 108" stroke-width=".6"/><path d="M-40 152 C280 52 440 292 712 192 S1192 22 1480 126" stroke-width=".9"/><path d="M-40 780 C300 660 520 900 820 790 S1250 640 1480 730" stroke-width="1.1"/><path d="M-40 796 C310 676 530 916 826 806 S1256 656 1480 748" stroke-width=".6"/><path d="M-40 812 C320 692 540 932 832 822 S1262 672 1480 766" stroke-width=".9"/></g></svg>
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>שאלות נפוצות</h2>
+      <p>ריכזתי כאן את השאלות שהכי שואלים אותי. לא מצאת תשובה? כתבי לי בוואטסאפ.</p>
+    </div>
+    <div class="faq-wrap" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>בואי נקבע תור</h2>
+      <p>הדרך הכי מהירה היא בוואטסאפ. אפשר גם למלא את הטופס, וההודעה תישלח אליי ישר לוואטסאפ.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="c-list">
+        <a class="c-item reveal r-right wa-link" href="#" target="_blank" rel="noopener"><div class="icon"><svg viewBox="0 0 24 24" class="wa-ico"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></div><div><b>וואטסאפ</b><span>מענה מהיר לקביעת תורים ושאלות</span></div></a>
+        <a class="c-item reveal r-right phone-link" style="transition-delay:.08s" href="#"><div class="icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></div><div><b>טלפון</b><span class="phone-text">050-000-0000</span></div></a>
+        <a class="c-item reveal r-right insta-link" style="transition-delay:.16s" href="#" target="_blank" rel="noopener"><div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div><div><b>אינסטגרם</b><span class="insta-text">@hairbymichal</span></div></a>
+        <div class="c-item reveal r-right" style="transition-delay:.24s"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><b>מיקום</b><span>רחובות · הכתובת המדויקת נשלחת בקביעת התור</span></div></div>
+        <div class="c-item reveal r-right" style="transition-delay:.32s"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>שעות פעילות</b><span>א׳–ה׳ 09:00–20:00 · ו׳ 08:00–14:00</span></div></div>
+      </div>
+      <form class="form reveal r-left" id="form" novalidate>
+        <h3>השאירי פרטים</h3>
+        <p>ממלאים, לוחצים, וההודעה נפתחת בוואטסאפ מוכנה לשליחה.</p>
+        <div class="row2">
+          <div class="field"><label for="f-name">שם מלא</label><input id="f-name" placeholder="נועה כהן" autocomplete="name"><div class="err">כתבי את השם שלך</div></div>
+          <div class="field"><label for="f-phone">טלפון</label><input id="f-phone" type="tel" placeholder="050-1234567" autocomplete="tel" dir="ltr" style="text-align:right"><div class="err">מספר טלפון לא תקין</div></div>
+        </div>
+        <div class="field"><label for="f-service">איזה טיפול?</label>
+          <select id="f-service"><option value="">בחירת טיפול</option><option>תספורת</option><option>צבע ושורשים</option><option>גוונים / בליאז׳</option><option>החלקה</option><option>טיפול שיקום</option><option>פן ועיצוב</option><option>תסרוקת כלה</option><option>תסרוקת ערב / אירוע</option><option>עוד לא בטוחה, רוצה ייעוץ</option></select>
+          <div class="err">בחרי טיפול</div></div>
+        <div class="field"><label for="f-date">תאריך מועדף (לא חובה)</label><input id="f-date" type="date"></div>
+        <div class="field"><label for="f-msg">הודעה (לא חובה)</label><textarea id="f-msg" placeholder="ספרי לי קצת על השיער שלך ומה היית רוצה"></textarea></div>
+        <button class="btn btn-gold" type="submit">שליחה בוואטסאפ</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <img class="f-logo" src="assets/img/logo-512.png" alt="Hair by Michal" loading="lazy">
+    <div class="f-name">HAIR BY MICHAL</div>
+    <div class="f-tag">מיכל דהרי · מעצבת שיער ברחובות</div>
+    <div class="socials">
+      <a class="wa-link" href="#" target="_blank" rel="noopener" aria-label="וואטסאפ"><svg viewBox="0 0 24 24" class="wa-ico"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+      <a class="insta-link" href="#" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+      <a class="phone-link" href="#" aria-label="טלפון"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></a>
+    </div>
+    <div class="copy">© <span id="year">2026</span> Hair by Michal · כל הזכויות שמורות<br>
+      <div class="credit">נבנה ועוצב ע״י <a href="https://wa.me/972556654987?text=%D7%94%D7%99%D7%99%20%D7%93%D7%91%D7%99%D7%A8%21%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%A9%D7%9C%20Hair%20by%20Michal%20%D7%95%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%92%D7%9D%20%D7%90%D7%AA%D7%A8%20%D7%9B%D7%96%D7%94%20%F0%9F%98%8A%20%D7%90%D7%A4%D7%A9%D7%A8%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%3F" target="_blank" rel="noopener" aria-label="דביר דהרי – רוצים אתר כזה? שלחו הודעה בוואטסאפ">דביר דהרי</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" href="#" target="_blank" rel="noopener" aria-label="שליחת הודעה בוואטסאפ"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+<button class="to-top" id="toTop" aria-label="חזרה למעלה"><svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="תמונה מוגדלת"><button aria-label="סגירה">×</button><img alt=""></div>
+
+<script>
+/* ===== פרטי קשר – לעדכן כאן בלבד ===== */
+const CONTACT = {
+  whatsapp: '972500000000',            // מספר וואטסאפ בפורמט בינלאומי, בלי 0 בהתחלה
+  phone: '050-000-0000',               // מספר לתצוגה ולחיוג
+  instagram: 'hairbymichal',           // שם המשתמש באינסטגרם
+};
+
+const waBase = 'https://wa.me/' + CONTACT.whatsapp;
+const waHello = waBase + '?text=' + encodeURIComponent('היי מיכל! הגעתי מהאתר ואשמח לקבוע תור 💇‍♀️');
+document.querySelectorAll('.wa-link').forEach(a => a.href = waHello);
+document.querySelectorAll('.phone-link').forEach(a => a.href = 'tel:' + CONTACT.phone.replace(/\D/g,''));
+document.querySelectorAll('.phone-text').forEach(s => s.textContent = CONTACT.phone);
+document.querySelectorAll('.insta-link').forEach(a => a.href = 'https://instagram.com/' + CONTACT.instagram);
+document.querySelectorAll('.insta-text').forEach(s => s.textContent = '@' + CONTACT.instagram);
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* header + to top */
+const header = document.getElementById('header'), toTop = document.getElementById('toTop');
+const onScroll = () => { const y = scrollY; header.classList.toggle('scrolled', y > 30); toTop.classList.toggle('show', y > 700); };
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+toTop.onclick = () => scrollTo({top:0, behavior:'smooth'});
+
+/* mobile menu */
+const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+burger.onclick = () => { const o = menu.classList.toggle('open'); burger.classList.toggle('open', o); burger.setAttribute('aria-expanded', o); };
+menu.querySelectorAll('a').forEach(a => a.onclick = () => { menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded', false); });
+
+/* active link */
+const links = [...menu.querySelectorAll('a')];
+const secObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)); }), {rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(s => secObs.observe(s));
+
+/* reveal on scroll */
+const rev = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rev.unobserve(e.target); } }), {threshold:.14});
+document.querySelectorAll('.reveal').forEach(el => rev.observe(el));
+
+/* sparkles */
+const sp = document.getElementById('sparkles');
+for (let i = 0; i < 22; i++) { const s = document.createElement('span'); s.style.left = Math.random()*100 + '%'; s.style.top = 30 + Math.random()*65 + '%'; s.style.animationDelay = (Math.random()*6).toFixed(2) + 's'; s.style.animationDuration = (5 + Math.random()*4).toFixed(2) + 's'; sp.appendChild(s); }
+
+/* parallax logo */
+const stage = document.querySelector('.logo-stage');
+if (matchMedia('(pointer:fine)').matches) document.querySelector('.hero').addEventListener('mousemove', e => {
+  const x = (e.clientX / innerWidth - .5) * 14, y = (e.clientY / innerHeight - .5) * 14;
+  stage.style.transform = `translate(${x}px,${y}px)`;
+});
+
+/* FAQ */
+const FAQ = [
+  ['איך קובעים תור?', 'הכי פשוט לשלוח לי הודעה בוואטסאפ, או למלא את הטופס כאן באתר. אחזור אלייך עם המועדים הפנויים הקרובים ונקבע יחד את מה שהכי נוח לך.'],
+  ['כמה זמן לוקח טיפול?', 'תלוי בטיפול ובאורך השיער. תספורת ופן לוקחים בערך שעה, צבע כשעה וחצי עד שעתיים, ובליאז׳ או החלקה יכולים לקחת כ-3 עד 4 שעות. בקביעת התור אגיד לך בדיוק כמה זמן לתכנן.'],
+  ['כמה עולה טיפול?', 'המחיר תלוי באורך ובעובי השיער ובסוג הטיפול. שלחי לי הודעה עם תמונה של השיער שלך ומה תרצי, ואתן לך הערכת מחיר מדויקת מראש. בלי הפתעות.'],
+  ['איך להגיע לתור צבע או בליאז׳?', 'עדיף להגיע עם שיער יבש ולא חפוף מאותו יום. אם יש לך תמונת השראה של הגוון שאת אוהבת, תביאי אותה, זה עוזר מאוד לדייק.'],
+  ['כמה זמן מחזיקה החלקה?', 'בדרך כלל בין 3 ל-5 חודשים, תלוי בסוג השיער ובתחזוקה. אחרי הטיפול אתן לך הוראות פשוטות ואמליץ על שמפו מתאים, כדי שהתוצאה תחזיק כמה שיותר.'],
+  ['האם צריך פגישת ניסיון לתסרוקת כלה?', 'מאוד מומלץ. בפגישת הניסיון אנחנו בונות יחד את התסרוקת, מתאימות אותה לשמלה, לאקססוריז ולאיפור, וביום החתונה את רגועה ויודעת בדיוק מה מחכה לך.'],
+  ['את מגיעה גם לבית הלקוחה או לאולם?', 'לכלות ולאירועים אפשר לתאם הגעה עד אלייך. שלחי לי הודעה עם התאריך והמיקום ונבדוק יחד.'],
+  ['מה קורה אם אני צריכה לבטל או לדחות?', 'אין בעיה, רק תעדכני אותי לפחות 24 שעות מראש כדי שאוכל לתת את התור למישהי אחרת.'],
+  ['איך שומרים על הצבע לאורך זמן?', 'משתמשים בשמפו ללא סולפטים, חופפים במים פושרים ולא חמים, ומשתמשים בהגנה מחום לפני פן או מחליק. אשמח להמליץ לך על מוצרים שמתאימים בדיוק לשיער שלך.'],
+];
+const fl = document.getElementById('faq-list');
+FAQ.forEach(([q, a], i) => {
+  const d = document.createElement('div'); d.className = 'qa reveal'; d.style.transitionDelay = (i * .05) + 's';
+  d.innerHTML = `<button aria-expanded="false" aria-controls="ans-${i}" id="q-${i}"><span>${q}</span><span class="pm" aria-hidden="true"></span></button><div class="ans" id="ans-${i}" role="region" aria-labelledby="q-${i}"><div><p>${a}</p></div></div>`;
+  d.querySelector('button').onclick = () => { const o = d.classList.toggle('open'); d.querySelector('button').setAttribute('aria-expanded', o); };
+  fl.appendChild(d); rev.observe(d);
+});
+
+/* gallery lightbox (works once real images are added) */
+const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+document.querySelectorAll('.g-item').forEach(g => g.onclick = () => { const im = g.querySelector('img'); if (!im) return; lbImg.src = im.src; lbImg.alt = im.alt; lb.classList.add('open'); });
+lb.onclick = e => { if (e.target !== lbImg) lb.classList.remove('open'); };
+addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+
+/* contact form -> WhatsApp */
+const form = document.getElementById('form');
+const fields = { name: 'f-name', phone: 'f-phone', service: 'f-service' };
+form.querySelectorAll('input,select').forEach(el => el.addEventListener('input', () => el.closest('.field').classList.remove('invalid')));
+form.onsubmit = e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  let ok = true;
+  const bad = id => { document.getElementById(id).closest('.field').classList.add('invalid'); ok = false; };
+  if (v(fields.name).length < 2) bad(fields.name);
+  if (v(fields.phone).replace(/\D/g,'').length < 9) bad(fields.phone);
+  if (!v(fields.service)) bad(fields.service);
+  if (!ok) { form.querySelector('.invalid input,.invalid select').focus(); return; }
+  let msg = `היי מיכל! 💇‍♀️\nשמי ${v('f-name')}\nטלפון: ${v('f-phone')}\nאשמח לקבוע: ${v('f-service')}`;
+  if (v('f-date')) msg += `\nתאריך מועדף: ${v('f-date').split('-').reverse().join('/')}`;
+  if (v('f-msg')) msg += `\n${v('f-msg')}`;
+  open(waBase + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+};
+</script>
+</body>
+</html>
