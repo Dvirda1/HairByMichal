@@ -92,12 +92,6 @@ button{font:inherit;cursor:pointer}
 .scroll-cue::after{content:"";position:absolute;top:8px;left:50%;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold);animation:cue 2s infinite}
 @keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(14px)}}
 
-/* ---------- marquee ---------- */
-.marquee{background:var(--espresso);color:var(--gold-3);overflow:hidden;padding:18px 0;border-block:1px solid rgba(217,185,127,.3)}
-.marquee-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
-.marquee span{font-family:var(--he);font-size:22px;padding-inline:26px;display:flex;align-items:center;gap:52px;white-space:nowrap}
-.marquee span::after{content:"✦";color:var(--gold);font-size:14px}
-@keyframes marquee{to{transform:translateX(50%)}}
 
 /* ---------- sections ---------- */
 section{position:relative}
@@ -389,14 +383,6 @@ footer nav a:hover{opacity:1;color:var(--gold-2)}
   <a class="scroll-cue" href="#services" aria-label="גלילה למטה"></a>
 </section>
 
-<!-- ================= MARQUEE ================= -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>תספורות נשים</span><span>צבע ושורשים</span><span>גוונים ובליאז׳</span><span>החלקות</span><span>טיפולי שיקום</span><span>תסרוקות כלה</span><span>תסרוקות ערב</span><span>פן ועיצוב</span>
-    <span>תספורות נשים</span><span>צבע ושורשים</span><span>גוונים ובליאז׳</span><span>החלקות</span><span>טיפולי שיקום</span><span>תסרוקות כלה</span><span>תסרוקות ערב</span><span>פן ועיצוב</span>
-  </div>
-</div>
-
 <!-- ================= SERVICES ================= -->
 <section class="section services" id="services">
   <div class="container">
@@ -617,7 +603,7 @@ const CONTACT = {
 
 const waBase = 'https://wa.me/' + CONTACT.whatsapp;
 const waMsg = t => waBase + '?text=' + encodeURIComponent(t);
-const waHello = waMsg('היי מיכל 🌸\nהגעתי אלייך דרך האתר ואשמח לקבוע תור ✨\nמתי יש לך זמן פנוי? 🗓️\n\nתודה 🤍');
+const waHello = waMsg('היי מיכל 🌸\nהגעתי אלייך דרך האתר ואשמח לקבוע תור ✨\nמתי יש לך זמן פנוי?\n\nתודה 🤍');
 const waFor = name => waMsg(`היי מיכל 🌸\nראיתי באתר את *${name}* ואני מאוד מתעניינת ✨\nאשמח לשמוע פרטים ולקבוע תור 💇‍♀️\n\nתודה 🤍`);
 document.querySelectorAll('[data-wa]').forEach(a => { a.href = waFor(a.dataset.wa); a.target = '_blank'; a.rel = 'noopener'; });
 document.querySelectorAll('.wa-link').forEach(a => a.href = waHello);
